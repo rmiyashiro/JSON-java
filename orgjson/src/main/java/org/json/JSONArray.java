@@ -945,10 +945,7 @@ public class JSONArray {
             int length = this.length();
             writer.write('[');
 
-            if (length == 1) {
-                JSONObject.writeValue(writer, this.myArrayList.get(0),
-                        indentFactor, indent);
-            } else if (length != 0) {
+            if (length != 0) {
                 final int newindent = indent + indentFactor;
 
                 for (int i = 0; i < length; i += 1) {
