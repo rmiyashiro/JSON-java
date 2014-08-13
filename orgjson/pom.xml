@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.json</groupId>
+  <artifactId>json</artifactId>
+  <version>1.0.0</version>
+
+  <name>${project.artifactId}</name>
+  <packaging>jar</packaging>
+  <description>Deployed artifact from the Douglas Crockford org.json master branch.</description>
+  <url>http://github.com/rmiyashiro/JSON-java</url>
+
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>http://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+      <comments>The software shall be used for good, not evil.</comments>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>douglascrockford</id>
+      <name>Douglas Crockford</name>
+      <email>douglas@crockford.com</email>
+    </developer>
+  </developers>
+
+</project>
