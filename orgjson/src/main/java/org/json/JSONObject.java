@@ -30,6 +30,7 @@ import java.io.Writer;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Enumeration;
 import java.util.LinkedHashMap;
@@ -775,7 +776,7 @@ public class JSONObject {
 
 // Shave off trailing zeros and decimal point, if possible.
 
-        String string = number.toString();
+        String string = new BigDecimal(number.toString()).toPlainString();
         if (string.indexOf('.') > 0 && string.indexOf('e') < 0
                 && string.indexOf('E') < 0) {
             while (string.endsWith("0")) {
